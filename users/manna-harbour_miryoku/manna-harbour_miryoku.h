@@ -7,7 +7,7 @@
 
 #include "miryoku_babel/miryoku_layer_selection.h"
 #include "miryoku_babel/miryoku_layer_list.h"
-
+#include "keymap_swedish.h"
 enum miryoku_layers {
 #define MIRYOKU_X(LAYER, STRING) U_##LAYER,
 MIRYOKU_LAYER_LIST
