@@ -29,6 +29,7 @@ void u_td_fn_U_##LAYER(qk_tap_dance_state_t *state, void *user_data) { \
     default_layer_set((layer_state_t)1 << U_##LAYER); \
   } \
 }
+
 MIRYOKU_LAYER_LIST
 #undef MIRYOKU_X
 
@@ -67,9 +68,9 @@ const uint16_t PROGMEM thumbcombos_base_left[] = {LT(U_NAV, KC_TAB), LT(U_MOUSE,
 const uint16_t PROGMEM thumbcombos_nav[] = {KC_ENT, KC_BSPC, COMBO_END};
 const uint16_t PROGMEM thumbcombos_mouse[] = {KC_BTN2, KC_BTN1, COMBO_END};
 const uint16_t PROGMEM thumbcombos_media[] = {KC_MSTP, KC_MPLY, COMBO_END};
-const uint16_t PROGMEM thumbcombos_num[] = {KC_0, KC_MINS, COMBO_END};
-const uint16_t PROGMEM thumbcombos_aeuml[] = {SE_L, SE_ODIA, COMBO_END};
-const uint16_t PROGMEM thumbcombos_aering[] = {SE_O, SE_P, COMBO_END};
+const uint16_t PROGMEM thumbcombos_num[] = {KC_0, SE_MINS, COMBO_END};
+const uint16_t PROGMEM thumbcombos_aeuml[] = {KC_L, SE_ODIA, COMBO_END};
+const uint16_t PROGMEM thumbcombos_aering[] = {KC_O, KC_P, COMBO_END};
   #if defined (MIRYOKU_LAYERS_FLIP)
 const uint16_t PROGMEM thumbcombos_sym[] = {KC_UNDS, KC_LPRN, COMBO_END};
   #else
@@ -82,7 +83,7 @@ combo_t key_combos[COMBO_COUNT] = {
   COMBO(thumbcombos_nav, KC_DEL),
   COMBO(thumbcombos_mouse, KC_BTN3),
   COMBO(thumbcombos_media, KC_MUTE),
-  COMBO(thumbcombos_num, KC_DOT),
+  COMBO(thumbcombos_num, SE_LABK),
   COMBO(thumbcombos_aeuml, SE_ADIA),
   COMBO(thumbcombos_aering, SE_ARNG),
   #if defined (MIRYOKU_LAYERS_FLIP)
