@@ -29,7 +29,6 @@ void u_td_fn_U_##LAYER(qk_tap_dance_state_t *state, void *user_data) { \
     default_layer_set((layer_state_t)1 << U_##LAYER); \
   } \
 }
-
 MIRYOKU_LAYER_LIST
 #undef MIRYOKU_X
 
