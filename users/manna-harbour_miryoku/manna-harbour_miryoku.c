@@ -68,12 +68,12 @@ const uint16_t PROGMEM thumbcombos_nav[] = {KC_ENT, KC_BSPC, COMBO_END};
 const uint16_t PROGMEM thumbcombos_mouse[] = {KC_BTN2, KC_BTN1, COMBO_END};
 const uint16_t PROGMEM thumbcombos_media[] = {KC_MSTP, KC_MPLY, COMBO_END};
 const uint16_t PROGMEM thumbcombos_num[] = {KC_0, SE_MINS, COMBO_END};
-const uint16_t PROGMEM thumbcombos_aeuml[] = {KC_L, SE_ODIA, COMBO_END};
+const uint16_t PROGMEM thumbcombos_aeuml[] = {LALT_T(SE_L),   LSFT_T(SE_ODIA), COMBO_END};
 const uint16_t PROGMEM thumbcombos_aering[] = {KC_O, KC_P, COMBO_END};
   #if defined (MIRYOKU_LAYERS_FLIP)
 const uint16_t PROGMEM thumbcombos_sym[] = {KC_UNDS, KC_LPRN, COMBO_END};
   #else
-const uint16_t PROGMEM thumbcombos_sym[] = {KC_RPRN, KC_UNDS, COMBO_END};
+const uint16_t PROGMEM thumbcombos_sym[] = {SE_RPRN, SE_UNDS, COMBO_END};
   #endif
 const uint16_t PROGMEM thumbcombos_fun[] = {KC_SPC, KC_TAB, COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
@@ -88,7 +88,7 @@ combo_t key_combos[COMBO_COUNT] = {
   #if defined (MIRYOKU_LAYERS_FLIP)
   COMBO(thumbcombos_sym, KC_RPRN),
   #else
-  COMBO(thumbcombos_sym, KC_LPRN),
+  COMBO(thumbcombos_sym, SE_QUES),
   #endif
   COMBO(thumbcombos_fun, KC_APP)
 };

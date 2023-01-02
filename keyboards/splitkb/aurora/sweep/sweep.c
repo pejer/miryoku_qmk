@@ -186,13 +186,13 @@ void render_logo(void) {
 void render_logo_text(void) {
     switch(default_layer_state){
         case 2:
-            oled_write_P(PSTR("WRKMN"), false);
+            oled_write_P(PSTR("wrkmn"), false);
             break;
         case 4:
-            oled_write_P(PSTR(" TAP "), false);
+            oled_write_P(PSTR(" tap "), false);
             break;
         default:
-            oled_write_P(PSTR("QWERT"), false);
+            oled_write_P(PSTR("qwert"), false);
             break;
     }
 }
